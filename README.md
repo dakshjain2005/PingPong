@@ -1,87 +1,85 @@
-# 🎮 Pong Game (C++ + Raylib)
+# 🕹️ PingPong – C++ / Raylib
 
-A beginner-friendly **Pong game** built using **C++** and **Raylib**.  
-Perfect for learning the basics of 2D graphics, collision detection, game loops, and user input in a clean and simple way.
+A clean, high-performance Pong clone written in C++ using Raylib. Features:
 
----
-
-## 📸 Screenshots
-
-<p align="center">
-  <img src="assets/screenshot1.png" width="500"/>
-  <br/>
-  <em>Classic Pong gameplay with Raylib</em>
-</p>
+- HD gameplay with smooth animations 🎯  
+- Dynamic ball speed increasing with score  
+- Smart CPU paddle for engaging combat  
 
 ---
 
-## 🚀 Features
+## 🎮 Gameplay Demo
 
-- 🏓 Classic Pong gameplay
-- 🎮 Player vs Player mode
-- 💥 Ball and paddle collisions
-- 🔢 Score tracking
-- 🧼 Clean, commented code
-- 🖥️ Simple and smooth 2D rendering using Raylib
+<video src="assets/pong_demo.mp4" controls width="800" poster="assets/preview.png"></video>
+
+*Note: Poster image (`preview.png`) is optional but gives a nice thumbnail.*
 
 ---
 
-## 🧠 Learning Goals
+## 🚀 Setup & Build
 
-This project helps you understand:
-- How a game loop works in C++
-- Handling keyboard input
-- Drawing shapes and text using Raylib
-- Managing game states (like scoring, resetting, etc.)
-- Collision detection logic
+1. Install Raylib:
+   ```bash
+   # Ubuntu
+   sudo apt install libraylib-dev
+   ```
 
----
+2. Clone & build:
+   ```bash
+   git clone https://github.com/dakshjain2005/PingPong.git
+   cd PingPong
+   mkdir build && cd build
+   cmake ..
+   make
+   ```
 
-## 🛠️ Installation & Setup
+3. Run the game:
+   ```bash
+   ./PingPong
+   ```
 
-### ✅ Prerequisites:
-- C++ compiler (like `g++`)
-- [Raylib](https://www.raylib.com/) installed on your system
-
-### 🧪 Compile and Run:
+Alternatively, compile directly:
 ```bash
-g++ pong.cpp -o pong -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
-./pong
-```
-
-If you're on Windows, you may need to adjust the linking options depending on your setup.
-
----
-
-## 🎮 Controls
-
-| Player | Control | Key       |
-|--------|---------|-----------|
-| Left   | Up      | `W`       |
-| Left   | Down    | `S`       |
-| Right  | Up      | `Up Arrow`|
-| Right  | Down    | `Down Arrow`|
-
----
-
-## 📁 Project Structure
-
-```
-pong-game/
-│
-├── pong.cpp            # Main game code
-├── assets/             # Screenshots or images
-└── README.md           # This file
+g++ src/main.cpp -o PingPong -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+./PingPong
 ```
 
 ---
 
-## ❤️ Credits
+## 🧩 Project Structure
 
-- Built with [Raylib](https://www.raylib.com/)
-- Inspired by the classic Pong arcade game
-- Made by **DAKSH** with passion and pixels
+- `assets/` — media files (video, images)  
+- `src/` — source code  
+- `README.md` — project overview & usage
 
 ---
 
-glu
+## ✅ Contributing
+
+Feel free to fork, open issues, or submit PRs for:
+
+- Sound or visual effects  
+- Enhanced AI difficulty modes  
+- Gamepad or multiplayer support  
+- Animations, menus, score streaks
+
+---
+
+## 🧠 Developer Notes
+
+Keep `main.cpp` clean and modular:
+
+```cpp
+#include <raylib.h>
+// ... your full code here ...
+```
+
+---
+
+> “PingPong is a fast-paced, responsive Pong game – smooth physics, evolving difficulty, and smart CPU make it addictive and fun!”
+
+---
+
+## 📄 License
+
+MIT License © 2025 Daksh Jain
