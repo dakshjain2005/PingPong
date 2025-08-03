@@ -10,9 +10,7 @@ A clean, high-performance Pong clone written in C++ using Raylib. Features:
 
 ## 🎮 Gameplay Demo
 
-<video [src="assets/pong_demo.mp4" controls width="800" poster="assets/preview.png"](https://github.com/user-attachments/assets/040a981a-cb57-48d4-a8f2-0354fce21bb4)></video>
-
-*Note: Poster image (`preview.png`) is optional but gives a nice thumbnail.*
+https://github.com/user-attachments/assets/040a981a-cb57-48d4-a8f2-0354fce21bb4
 
 ---
 
